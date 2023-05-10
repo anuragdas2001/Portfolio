@@ -317,7 +317,7 @@ section:nth-child(2n + 3) {
 
 }
 /* Contact */
-#Contact-bg{
+#Contact{
   height: 40rem;
   width: 100vw;
  background-image: linear-gradient(to top right,rgb(82, 108, 204),rgb(1, 1, 68) 60%);
