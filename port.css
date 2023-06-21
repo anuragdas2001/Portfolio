@@ -282,7 +282,8 @@ section:nth-child(2n + 3) {
   content: '';
   position:absolute;
   top:80%;
-  right:-127%;
+  /* right:-120%; */
+  left:225%;
   border-radius: 50%;
   width: 0.5rem;
   height: 0.5rem;
@@ -293,7 +294,7 @@ section:nth-child(2n + 3) {
   content: '';
   position:absolute;
   top:80%;
-  left:-51%;
+  left:-50%;
   border-radius: 50%;
   width: 0.5rem;
   height: 0.5rem;
@@ -308,6 +309,29 @@ section:nth-child(2n + 3) {
   top:10%;
   left:50%;
   z-index: 2;
+}
+@media screen and (max-width:600px) {
+  #timeline-divider{
+    left: 5%;
+  }
+  #timeline-box{
+    left:12%!important; 
+    width: 80%;
+  }
+  /* #timeline-box::after{
+    left:-10% !important;
+  } */
+  #timeline-box:nth-child(2n+1)::after{
+    left: -10%;
+  }
+  #timeline-box:nth-child(2n)::after{
+    left:-10%;
+  }
+  /* #timeline-box::nth-child(2n)
+  {
+    left:12%;
+  } */
+
 }
 #plane-icon{
   position:sticky;
